@@ -1,0 +1,62 @@
+<!-- $(elemento ou elementos).acao(); 
+        tag, id ou class-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Aula 1</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link href="../bootstrap-5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="aula1.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Selecionando elementos com JQuery</h1>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Parágrafos (p)</h4>
+            </div>
+            <div class="col-md-4">
+                <h4>Divisões (div)</h4>
+            </div>
+            <div class="col-md-4">
+                <h4>Campos (input)</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p class="bg-primary">Este é um parágrafo</p>
+                <p class="bg-success">Este é um parágrafo</p>
+            </div>
+            <div class="col-md-4">
+                <div style="height: 100px; width: 100px; background: #428bca;" class="div_2 pull-left"></div>
+                <div style="height: 100px; width: 100px; background: #5cb85c; margin-left: 15px;" class="div_2 pull-left"></div>
+            </div>
+            <div class="col-md-4">
+                <input id="entrada1" type="text" class="form-control">
+                <input id="entrada2" type="text" class="form-control">
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-md-4">
+                <button type="button" class="btn btn-danger" onclick="ocultaElementoByTag('p')">Esconder Parágrafos</button>
+                <button type="button" class="btn btn-success" onclick="exibeElementoByTag('p')">Exibir Parágrafos</button>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-danger" onclick="ocultaElementoByClass('div_2')">Esconder Divs</button>
+                <button type="button" class="btn btn-success" onclick="exibeElementoByClass('div_2')">Exibir Divs</button>    
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-danger" onclick="ocultaElementoById('entrada1'); ocultaElementoById('entrada2')">Esconder Inputs</button>
+                <button type="button" class="btn btn-success" onclick="exibeElementoById('entrada1'); exibeElementoById('entrada2')">Exibir Inputs</button>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

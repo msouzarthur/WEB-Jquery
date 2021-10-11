@@ -1,0 +1,32 @@
+table{
+    width: 600px;
+}
+#pagina_inicial{
+    text-align: center;
+    padding-left: 27%;
+    
+}
+input{
+    border: 0px;
+    border-radius: 5px;
+    height: 16px;
+    box-shadow: 1px 1px 6px black ;
+}
+#palco_jogo{
+    margin-top: 50px;
+    text-align: center;
+}
+#palco_jogo div{
+    display: inline-block;
+}
+.tabela{
+    border: 1px;
+}
+
+.campo{
+    width: 100px;
+    height: 100px;
+}
+#vezDe{
+    position: relative;
+}
